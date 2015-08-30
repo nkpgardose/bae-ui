@@ -106,3 +106,20 @@
   white-space: nowrap !important;
   word-wrap: normal !important;
 }
+
+// Link utilities
+// =============================================================================
+.u-linkClean,
+.u-linkClean:active,
+.u-linkClean:focus,
+.u-linkClean:hover {
+  text-decoration: none !important;
+}
+
+.u-linkBlock,
+.u-linkBlock:active,
+.u-linkBlock:focus,
+.u-linkBlock:hover {
+  display: block !important;
+  text-decoration: none !important;
+}
