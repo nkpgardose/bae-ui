@@ -1,0 +1,61 @@
+// type. Prefer px for precise value.
+// -----------------------------------------------------------------------------
+$fontFamily-sans: "Helvetica Neue", Helvetica, Arial, sans;
+$fontFamily-serif: 'Quattrocento', Georgia, 'Times New Roman', Times, serif;
+
+// mixins for type
+// -----------------------------------------------------------------------------
+@mixin font-serifN3 {
+  font-weight: 300;
+  font-style: $fontFamily-serif;
+}
+@mixin font-serifI3 {
+  font-style: italic;
+  font-weight: 300;
+  font-family: $fontFamily-serif;
+}
+@mixin font-serifN4 {
+  font-weight: normal;
+  font-family: $fontFamily-serif;
+}
+@mixin font-serifI4 {
+  font-style: italic;
+  font-weight: normal;
+  font-family: $fontFamily-serif;
+}
+@mixin font-serifN7 {
+  font-weight: bold;
+  font-family: $fontFamily-serif;
+}
+@mixin font-serifI7 {
+ font-style: italic;
+ font-weight: bold;
+ font-family: $fontFamily-serif;
+}
+@mixin font-sansN3 {
+  font-weight: 300;
+  font-style: $fontFamily-sans;
+}
+@mixin font-sansI3 {
+  font-style: italic;
+  font-weight: 300;
+  font-family: $fontFamily-sans;
+}
+@mixin font-sansN4 {
+  font-weight: normal;
+  font-family: $fontFamily-sans;
+}
+@mixin font-sansI4 {
+  font-style: italic;
+  font-weight: normal;
+  font-family: $fontFamily-sans;
+}
+@mixin font-sansN7 {
+  font-weight: bold;
+  font-family: $fontFamily-sans;
+}
+@mixin font-sansI7 {
+  font-style: italic;
+  font-weight: bold;
+  font-family: $fontFamily-sans;
+}
