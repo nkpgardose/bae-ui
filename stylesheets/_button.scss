@@ -1,0 +1,76 @@
+.btn {
+  @include font-sansN7;
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  min-width: 64px;
+  padding: 0 13px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  font-size: 13px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  background: transparent;
+  border: none;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-rendering: optimizeLegibility;
+}
+
+.btn:-moz-focus-inner {
+  border: 0;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, .14);
+}
+
+.btn:focus:not(:active) {
+  background-color: rgba(0, 0, 0, .14);
+}
+
+.btn:active {
+  background-color: rgba(0, 0, 0, .24);
+}
+
+.btn[disabled][disabled] {
+  color: rgba(0, 0, 0, .24);
+  cursor: auto;
+  background-color: transparent;
+}
+
+a.btn:focus {
+  outline: none;
+}
+
+input.btn[type="submit"] {
+  -webkit-appearance: none;
+}
+
+.btn--primary {
+  background-color: rgb(135, 206, 235);
+  color: white;
+}
+
+.btn--primary:hover {
+  background-color: darken(rgb(135, 206, 235), 5);
+}
+
+.btn--primary:focus:not(:active) {
+  background-color: darken(rgb(135, 206, 235), 5);
+}
+
+.btn--primary:active {
+  background-color: darken(rgb(135, 206, 235), 15);
+}
+
+.btn--darkFont {
+  color: rgba(0, 0, 0, 0.87);
+}
