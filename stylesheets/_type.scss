@@ -1,10 +1,10 @@
 // type. Prefer px for precise value.
-// -----------------------------------------------------------------------------
-$fontFamily-sans: "Helvetica Neue", Helvetica, Arial, sans;
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+$fontFamily-sans: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans;
 $fontFamily-serif: 'Quattrocento', Georgia, 'Times New Roman', Times, serif;
 
 // mixins for type
-// -----------------------------------------------------------------------------
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 @mixin font-serifN3 {
   font-weight: 300;
   font-style: $fontFamily-serif;

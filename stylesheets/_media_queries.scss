@@ -1,7 +1,7 @@
 // Media queries - set of variables for grid and screen range values
 
 // Screen variables
-// -----------------------------------------------------------------------------
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 $columns-phone: 4;
 $columns-tablet: 8;
 $columns-desktop: 12;
@@ -24,7 +24,7 @@ $range-tablet-up: "(min-width: #{$breakpoint-tablet})";
 $range-desktop: "(min-width: #{$breakpoint-desktop})";
 
 // Screen application
-// -----------------------------------------------------------------------------
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 // Using screen ranges.
 // If mobile to up, do not use media
 // @media #{$range-phone} {}
