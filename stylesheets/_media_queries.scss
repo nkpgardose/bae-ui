@@ -1,0 +1,33 @@
+// Media queries - set of variables for grid and screen range values
+
+// Screen variables
+// -----------------------------------------------------------------------------
+$columns-phone: 4;
+$columns-tablet: 8;
+$columns-desktop: 12;
+$columns-default: 4;
+
+$gutter-phone: 16px;
+$gutter-tablet: 16px;
+$gutter-desktop: 16px;
+
+$margin-phone: 16px;
+$margin-tablet: 16px;
+$margin-desktop: 16px;
+
+$breakpoint-tablet: 480px;
+$breakpoint-desktop: 840px;
+
+$range-phone: "(max-width: #{$breakpoint-tablet - 1px}";
+$range-tablet: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px})";
+$range-tablet-up: "(min-width: #{$breakpoint-tablet})";
+$range-desktop: "(min-width: #{$breakpoint-desktop})";
+
+// Screen application
+// -----------------------------------------------------------------------------
+// Using screen ranges.
+// If mobile to up, do not use media
+// @media #{$range} {}
+// @media #{$range-tablet} {}
+// @media #{$range-tablet-up} {}
+// @media #{$range-desktop} {}
