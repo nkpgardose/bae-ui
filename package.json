@@ -3,12 +3,9 @@
   "version": "0.0.0",
   "description": "UI components using vanilla HTML, CSS, and JS. This suits from mobile to large screens, making static sites with ease",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-ruby-sass": "^1.4.0"
-  },
   "devDependencies": {
     "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-concat": "^2.6.0",
     "gulp-csso": "^1.0.0",
