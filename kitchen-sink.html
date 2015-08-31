@@ -28,6 +28,12 @@
       border: 1px solid black;
       padding: 10px;
     }
+    .grid--sample .cell {
+      background-color: rgb(239, 239, 239);
+      text-align: center;
+      height: 100px;
+      border: 1px solid black;
+    }
   </style>
 </head>
 <body>
@@ -35,9 +41,9 @@
     <span class="kitchen-title">Kitchen Sink</span>
     <hr>
     <div class="kitchen-component">
-      <div class="-title">
+      <span class="-title">
         Headings
-      </div>
+      </span>
       <span class="-description">
       </span>
       <div class="-section">
@@ -50,11 +56,11 @@
       </div>
     </div>
     <div class="kitchen-component">
-      <div class="-title">
+      <span class="-title">
         Sub-heading
-      </div>
-      <div class="-description">
-      </div>
+      </span>
+      <span class="-description">
+      </span>
       <div class="-section">
         <h1><small>Hello small world!</small></h1>
         <h2><small>Hello small world!</small></h2>
@@ -65,8 +71,8 @@
       </div>
     </div>
     <div class="kitchen-component">
-      <div class="-title">Paragraphs</div>
-      <div class="-description"></div>
+      <span class="-title">Paragraphs</span>
+      <span class="-description"></span>
       <div class="-section">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nisi atque expedita quos culpa accusamus aut inventore ea quaerat ullam!</p>
         <p>Paragraph with <a href="#">anchor</a></p>
@@ -75,6 +81,47 @@
         <p>Paragrap with underlines texts like <del>deleted text</del>, <s>strikethrough text</s>, <ins>inserted text</ins>, <u>underlined text</u></p>
         <p>paragraph can also <code>code</code></p>
         <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>. Provident <strong>distinctio tempore</strong> inventore nostrum! <em>Cupiditate, eligendi</em>, unde. <mark>Quisquam sit earum nisi necessitatibus temporibus blanditiis asperiores</mark> maxime delectus numquam commodi! Fuga molestiae voluptatum explicabo quasi necessitatibus soluta minus perferendis laborum hic, inventore distinctio. Voluptatum similique, enim expedita unde voluptate ea dignissimos itaque eaque fuga reprehenderit voluptas exercitationem praesentium impedit vero nobis totam sit, tempore eligendi deserunt consectetur inventore ipsum adipisci, assumenda. Sunt dolorem, quo laboriosam velit dicta aliquam tenetur, consequuntur quidem? Voluptatibus porro perspiciatis, cum ea quos quod voluptas soluta beatae, facilis voluptates illo et necessitatibus ut, tenetur assumenda <code>animi debitis</code> ipsa!</p>
+      </div>
+    </div>
+    <div class="kitchen-component">
+      <span class="-title">Grid</span>
+      <span class="-description"></span>
+      <div class="-section">
+        <div class="grid grid--sample">
+          <div class="cell">normal cell behavior with no modifiers</div>
+        </div>
+        <div class="grid grid--sample">
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+          <div class="cell cell--1">1</div>
+        </div>
+        <div class="grid grid--sample">
+          <div class="cell cell--p4 cell--t1">p4 - t1 - no desktop</div>
+          <div class="cell cell--p4 cell--t3">p4 - t3 - no desktop</div>
+          <div class="cell cell--p4 cell--t4">p4 - t4 - no desktop</div>
+        </div>
+        <div class="grid grid--sample grid--center">
+          <div class="cell">grid in center</div>
+          <div class="cell">grid in center</div>
+        </div>
+        <div class="grid grid--sample grid--right">
+          <div class="cell">grid in right</div>
+          <div class="cell">grid in right</div>
+        </div>
+        <div class="grid grid--sample">
+          <div class="cell is-phone-hidden">I am hiding at phone screens</div>
+          <div class="cell is-tablet-hidden">I am hiding at tablet screens</div>
+          <div class="cell is-desktop-hidden">I am hiding at desktop screens</div>
+        </div>
       </div>
     </div>
   </section>

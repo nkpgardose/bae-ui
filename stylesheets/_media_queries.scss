@@ -18,7 +18,7 @@ $margin-desktop: 16px;
 $breakpoint-tablet: 480px;
 $breakpoint-desktop: 840px;
 
-$range-phone: "(max-width: #{$breakpoint-tablet - 1px}";
+$range-phone: "(max-width: #{$breakpoint-tablet - 1px})";
 $range-tablet: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px})";
 $range-tablet-up: "(min-width: #{$breakpoint-tablet})";
 $range-desktop: "(min-width: #{$breakpoint-desktop})";
@@ -27,7 +27,7 @@ $range-desktop: "(min-width: #{$breakpoint-desktop})";
 // -----------------------------------------------------------------------------
 // Using screen ranges.
 // If mobile to up, do not use media
-// @media #{$range} {}
+// @media #{$range-phone} {}
 // @media #{$range-tablet} {}
 // @media #{$range-tablet-up} {}
 // @media #{$range-desktop} {}
