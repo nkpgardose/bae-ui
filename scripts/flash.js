@@ -4,7 +4,9 @@
   var flashClose = document.getElementsByClassName('js-flashClose');
 
   var closeFlash = function(event) {
-    console.log('close it');
+    this.removeEventListener('click', closeFlash);
+    // Removing flash
+    this.parentElement.remove();
   };
 
   for (var i = 0; i < flashClose.length; i++) {
