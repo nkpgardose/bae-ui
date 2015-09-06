@@ -90,6 +90,10 @@ code {
   color: red;
 }
 
+.label-body {
+  margin-left: 5px;
+}
+
 @media #{$range-tablet-up} {
   html,
   body {
