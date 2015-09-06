@@ -1,0 +1,36 @@
+.flash {
+  @include font-sansN3;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  border-radius: 2px;
+}
+
+.flash-message,
+.flash-close {
+  margin: 10px;
+}
+
+.flash-message {
+  flex-grow: 2;
+}
+
+.flash-close {
+  color: rgba(0, 0, 0, 0.87);
+  max-width: 50px;
+  text-align: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.flash--primary {
+  background-color: rgb(135, 206, 235);
+  color: white;
+  border: none;
+}
+
+.flash--primary .flash-close {
+  color: white;
+}
