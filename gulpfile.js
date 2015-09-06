@@ -53,6 +53,11 @@ gulp.task('scripts:dev', ['jscs', 'jshint'], function() {
     .pipe($.size({title: 'scripts'}));
 });
 
+gulp.task('ionfonts:dev', function() {
+  return gulp.src('stylesheets/fonts/*')
+    .pipe(gulp.dest('dev/fonts'));
+});
+
 gulp.task('stylesheets', function() {
   return gulp.src('stylesheets/bae.scss')
     .pipe($.sass({
@@ -82,7 +87,7 @@ gulp.task('scripts', ['jscs', 'jshint'], function() {
     .pipe($.size({title: 'scripts'}));
 });
 
-gulp.task('serve', ['stylesheets:dev', 'scripts:dev'], function() {
+gulp.task('serve', ['stylesheets:dev', 'scripts:dev', 'ionfonts:dev'], function() {
   browserSync.init({
     notify: false,
     server: './',
