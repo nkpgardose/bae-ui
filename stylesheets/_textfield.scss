@@ -1,0 +1,20 @@
+::placeholder {
+  @include font-sansN3;
+}
+.textfield {
+  box-sizing: border-box;
+  width: 300px;
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 11px 10px 11px 13px;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  border-radius: 2px;
+  box-shadow: none;
+  outline: none;
+}
+.textfield--noBorder {
+  background-color: white;
+  border: none;
+}
