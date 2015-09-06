@@ -1,9 +1,50 @@
-// type. Prefer px for precise value.
+// Type. Prefer px for precise value.
 // –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 $fontFamily-sans: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans;
 $fontFamily-serif: 'Quattrocento', Georgia, 'Times New Roman', Times, serif;
 
-// mixins for type
+// Scales - Use this as possible for component variable to maintain consistency
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+$fontSize-base: 14px;
+$fontSize-base--tabUp: 16px;
+$fontSize-large: 24px;
+$fontSize-larger: 32px;
+$fontSize-largest: 44px;
+
+$lineHeight-base: 1.55;
+$lineHeight-base--tabUp: 1.6;
+
+// Component Variables - <prop>-<elem | class>--<screen>
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+$fontSize-h1: 40px;
+$fontSize-h2: 36px;
+$fontSize-h3: 32px;
+$fontSize-h4: 28px;
+$fontSize-h5: 24px;
+$fontSize-h6: 20px;
+$fontSize-h1--tabUp: $fontSize-largest;
+$fontSize-h2--tabUp: 40px;
+$fontSize-h3--tabUp: 36px;
+$fontSize-h4--tabUp: 32px;
+$fontSize-h5--tabUp: 28px;
+$fontSize-h6--tabUp: 24px;
+$fontSize-subHeaders: 0.6em;
+
+$lineHeight-h1: 1.2;
+$lineHeight-h2: 1.25;
+$lineHeight-h3: 1.3;
+$lineHeight-h4: 1.35;
+$lineHeight-h5: 1.4;
+$lineHeight-h6: 1.5;
+
+$lineHeight-h1--tabUp: 1.15;
+$lineHeight-h2--tabUp: 1.2;
+$lineHeight-h3--tabUp: 1.25;
+$lineHeight-h4--tabUp: 1.30;
+$lineHeight-h5--tabUp: 1.35;
+$lineHeight-h6--tabUp: 1.4;
+
+// Mixins for type
 // –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 @mixin font-serifN3 {
   font-weight: 300;
