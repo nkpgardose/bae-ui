@@ -78,7 +78,7 @@ $lineHeight-h6--tabUp: 1.4;
 }
 @mixin font-sansN3 {
   font-weight: 300;
-  font-style: $fontFamily-sans;
+  font-family: $fontFamily-sans;
 }
 @mixin font-sansI3 {
   font-style: italic;

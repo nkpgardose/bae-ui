@@ -1,7 +1,21 @@
-::placeholder {
+::-webkit-input-placeholder {
   @include font-sansN3;
 }
+
+:-moz-placeholder { /* Firefox 18- */
+  @include font-sansN3;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  @include font-sansN3;
+}
+
+:-ms-input-placeholder {
+  @include font-sansN3;
+}
+
 .textfield {
+  @include font-sansN3;
   box-sizing: border-box;
   width: 300px;
   max-width: 100%;
