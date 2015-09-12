@@ -90,6 +90,21 @@ code {
   color: red;
 }
 
+pre {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: 3px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+pre > code {
+  padding: 1rem 1.5rem;
+  white-space: pre;
+  color: inherit;
+  background-color: transparent;
+}
+
 .label-body {
   margin-left: 5px;
 }
