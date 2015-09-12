@@ -1,0 +1,37 @@
+.blockquote {
+  margin: 0px;
+  border-left: 5px solid rgba(0, 0, 0, 0.18);
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.blockquote p {
+  @include font-sansI4;
+  font-size: 20px;
+}
+
+.blockquote-source {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.blockquote-source:before {
+  content: "\2014 \00A0";
+}
+
+.blockquote-cite {
+  font-style: italic;
+}
+
+.blockquote--reverse {
+  text-align: right;
+  border-left: none;
+  border-right: 5px solid rgba(0, 0, 0, 0.18);
+}
+
+.blockquote--reverse .blockquote-source:after {
+  content: "\2014 \00A0";
+}
+
+.blockquote--reverse .blockquote-source:before {
+  content: none;
+}
