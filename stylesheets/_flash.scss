@@ -11,6 +11,7 @@
 .flash-message,
 .flash-close {
   margin: 10px;
+  color: inherit;
 }
 
 .flash-message {
@@ -25,12 +26,30 @@
   cursor: pointer;
 }
 
-.flash--primary {
-  background-color: $bgColor-flashPrimary;
-  color: $color-flashPrimary;
+.flash--primary,
+.flash--danger,
+.flash--success,
+.flash--warning,
+.flash--info {
+  color: $color-flashFilled;
   border: none;
 }
+.flash--primary {
+  background-color: $bgColor-flashPrimary;
+}
 
-.flash--primary .flash-close {
-  color: inherit;
+.flash--danger {
+  background-color: $bgColor-flashDanger;
+}
+
+.flash--success {
+  background-color: $bgColor-flashSuccess;
+}
+
+.flash--warning {
+  background-color: $bgColor-flashWarning;
+}
+
+.flash--info {
+  background-color: $bgColor-flashInfo;
 }

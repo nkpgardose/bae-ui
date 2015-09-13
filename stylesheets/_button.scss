@@ -54,9 +54,16 @@ input.btn[type="submit"] {
   -webkit-appearance: none;
 }
 
+.btn--primary,
+.btn--danger,
+.btn--success,
+.btn--warning,
+.btn--info {
+  color: $color-btnFilled;
+}
+
 .btn--primary {
   background-color: $bgColor-btnPrimary;
-  color: $color-btnPrimary;
 }
 
 .btn--primary:hover {
@@ -69,4 +76,68 @@ input.btn[type="submit"] {
 
 .btn--primary:active {
   background-color: $bgColor-btnPrimaryActive;
+}
+
+.btn--danger {
+  background-color: $bgColor-btnDanger;
+}
+
+.btn--danger:hover {
+  background-color: $bgColor-btnDangerHover;
+}
+
+.btn--danger:focus:not(:active) {
+  background-color: $bgColor-btnDangerFocus;
+}
+
+.btn--danger:active {
+  background-color: $bgColor-btnDangerActive;
+}
+
+.btn--success {
+  background-color: $bgColor-btnSuccess;
+}
+
+.btn--success:hover {
+  background-color: $bgColor-btnSuccessHover;
+}
+
+.btn--success:focus:not(:active) {
+  background-color: $bgColor-btnSuccessFocus;
+}
+
+.btn--success:active {
+  background-color: $bgColor-btnSuccessActive;
+}
+
+.btn--warning {
+  background-color: $bgColor-btnWarning;
+}
+
+.btn--warning:hover {
+  background-color: $bgColor-btnWarningHover;
+}
+
+.btn--warning:focus:not(:active) {
+  background-color: $bgColor-btnWarningFocus;
+}
+
+.btn--warning:active {
+  background-color: $bgColor-btnWarningActive;
+}
+
+.btn--info {
+  background-color: $bgColor-btnInfo;
+}
+
+.btn--info:hover {
+  background-color: $bgColor-btnInfoHover;
+}
+
+.btn--info:focus:not(:active) {
+  background-color: $bgColor-btnInfoFocus;
+}
+
+.btn--info:active {
+  background-color: $bgColor-btnInfoActive;
 }
