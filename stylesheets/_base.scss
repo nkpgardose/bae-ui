@@ -4,6 +4,7 @@ html,
 body {
   @include font-sansN4;
   font-size: $fontSize-base;
+  color: $color-body;
   line-height: $lineHeight-base;
   letter-spacing: .005em;
 }
@@ -21,7 +22,7 @@ h3 small,
 h4 small,
 h5 small,
 h6 small {
-  color: rgba(0, 0, 0, 0.54);
+  color: $color-subHeader;
   font-size: $fontSize-subHeaders;
 }
 
@@ -71,7 +72,7 @@ p {
 }
 
 a {
-  color: rgb(135, 206, 235);
+  color: $color-link;
 }
 
 a:focus {
@@ -80,14 +81,14 @@ a:focus {
 
 mark {
   padding: 1px 3px;
-  background-color: rgba(255, 255, 20, 0.50);
+  background-color: $bgColor-mark;
 }
 
 code {
   padding: 2px;
-  background-color: lighten(pink, 10);
+  background-color: $bgColor-code;
   border-radius: 2px;
-  color: red;
+  color: $color-code;
 }
 
 pre {

@@ -18,7 +18,7 @@
 }
 
 .flash-close {
-  color: rgba(0, 0, 0, 0.87);
+  color: inherit;
   max-width: 50px;
   text-align: center;
   flex-grow: 1;
@@ -26,11 +26,11 @@
 }
 
 .flash--primary {
-  background-color: rgb(135, 206, 235);
-  color: white;
+  background-color: $bgColor-flashPrimary;
+  color: $color-flashPrimary;
   border: none;
 }
 
 .flash--primary .flash-close {
-  color: white;
+  color: inherit;
 }

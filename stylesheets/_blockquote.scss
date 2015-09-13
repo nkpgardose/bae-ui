@@ -1,6 +1,6 @@
 .blockquote {
   margin: 0px;
-  border-left: 5px solid rgba(0, 0, 0, 0.18);
+  border-left: 5px solid $borderColor-blockquote;
   padding: 10px 20px;
   margin-bottom: 30px;
 }
@@ -11,7 +11,7 @@
 }
 
 .blockquote-source {
-  color: rgba(0, 0, 0, 0.54);
+  color: $color-blockquoteSource;
 }
 
 .blockquote-source:before {
@@ -25,7 +25,7 @@
 .blockquote--reverse {
   text-align: right;
   border-left: none;
-  border-right: 5px solid rgba(0, 0, 0, 0.18);
+  border-right: 5px solid $borderColor-blockquoteReverse;
 }
 
 .blockquote--reverse .blockquote-source:after {

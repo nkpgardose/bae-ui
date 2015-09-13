@@ -1,0 +1,60 @@
+// Color - Variables
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// Branding
+$primary: rgb(84, 110, 164);
+$secondary: rgb(227, 108, 93);
+$success: rgb(105, 140, 114);
+$danger: rgb(227, 108, 93);
+$warning: rgb(234, 195, 99);
+$info: rgb(39, 164, 164);
+
+// Grayscale
+$black:                       rgb(69, 63, 60);
+$blackA8:                     rgba(0, 0, 0, 0.87);
+$blackA5:                     rgba(0, 0, 0, 0.54);
+$blackA3:                     rgba(0, 0, 0, 0.38);
+$blackA1:                     rgba(0, 0, 0, 0.12);
+$white:                       rgb(247, 247, 247);
+$whiteA7:                     rgba(255, 255, 255, 0.7);
+$whiteA3:                     rgba(255, 255, 255, 0.3);
+$whiteA1:                     rgba(255, 255, 255, 0.12);
+
+// Colors to use on most components
+$charcoal:                    rgb(33, 33, 33);
+$darkgrey:                    rgb(66, 66, 66);
+$grey:                        rgb(97, 97, 97);
+$silver:                      rgb(236, 236, 236);
+
+// Component Variables
+// –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+$color-body: $blackA8;
+$color-subHeader: $blackA5;
+$color-link: $primary;
+$color-code: $danger;
+$color-btn: $blackA8;
+$color-btnDisabled: $blackA3;
+$color-btnPrimary: $white;
+$color-flashClose: $blackA8;
+$color-flashPrimary: $white;
+$color-blockquoteSource: $blackA5;
+$color-cardMedia: $white;
+
+$bgColor-mark: $warning;
+$bgColor-code: lighten($danger, 30);
+$bgColor-btnHover: $blackA1;
+$bgColor-btnFocus: $blackA1;
+$bgColor-btnActive: $blackA3;
+$bgColor-btnPrimary: $primary;
+$bgColor-btnPrimaryHover: darken($primary, 5);
+$bgColor-btnPrimaryFocus: darken($primary, 5);
+$bgColor-btnPrimaryActive: darken($primary, 15);
+$bgColor-flashPrimary: $primary;
+
+$borderColor-blockquote: $blackA1;
+$borderColor-blockquoteReverse: $blackA1;
+$borderColor-tableTh: $black;
+$borderColor-tableTd: $black;
+$borderColor-tableBordered: $black;
+$borderColor-cardContext: $white;
+
+$boxShadow-card: $blackA1;

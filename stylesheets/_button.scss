@@ -16,7 +16,7 @@
   background: transparent;
   border: none;
   border-radius: 2px;
-  color: rgba(0, 0, 0, 0.87);
+  color: $color-btn;
   cursor: pointer;
   outline: none;
   overflow: hidden;
@@ -29,19 +29,19 @@
 }
 
 .btn:hover {
-  background-color: rgba(0, 0, 0, .14);
+  background-color: $bgColor-btnHover;
 }
 
 .btn:focus:not(:active) {
-  background-color: rgba(0, 0, 0, .14);
+  background-color: $bgColor-btnFocus;
 }
 
 .btn:active {
-  background-color: rgba(0, 0, 0, .24);
+  background-color: $bgColor-btnActive;
 }
 
 .btn[disabled][disabled] {
-  color: rgba(0, 0, 0, .24);
+  color: $color-btnDisabled;
   cursor: auto;
   background-color: transparent;
 }
@@ -55,18 +55,18 @@ input.btn[type="submit"] {
 }
 
 .btn--primary {
-  background-color: rgb(135, 206, 235);
-  color: white;
+  background-color: $bgColor-btnPrimary;
+  color: $color-btnPrimary;
 }
 
 .btn--primary:hover {
-  background-color: darken(rgb(135, 206, 235), 5);
+  background-color: $bgColor-btnPrimaryHover;
 }
 
 .btn--primary:focus:not(:active) {
-  background-color: darken(rgb(135, 206, 235), 5);
+  background-color: $bgColor-btnPrimaryFocus;
 }
 
 .btn--primary:active {
-  background-color: darken(rgb(135, 206, 235), 15);
+  background-color: $bgColor-btnPrimaryActive;
 }

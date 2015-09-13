@@ -8,14 +8,14 @@
 }
 
 .table th {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid $borderColor-tableTh;
 }
 
 .table td {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $borderColor-tableTd;
 }
 
 .table--bordered th,
 .table--bordered td {
-  border: 1px solid black;
+  border: 1px solid $borderColor-tableBordered;
 }
