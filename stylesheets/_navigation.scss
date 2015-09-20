@@ -1,0 +1,23 @@
+.navigation {
+  position: fixed;
+  left: 0;
+  top: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.87);
+  transition: top .3s ease-out;
+}
+
+.navigation.is-active {
+  top: 0;
+}
+
+.navigation .navigation-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: inherit;
+  font-size: 2em;
+  padding: 1em;
+}
