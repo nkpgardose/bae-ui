@@ -58,6 +58,16 @@ gulp.task('ionfonts:dev', function() {
     .pipe(gulp.dest('dev/fonts'));
 });
 
+gulp.task('custom:dev', function() {
+  return gulp.src('stylesheets/custom.scss')
+    .pipe($.sass({
+      precision: 10,
+      onError: console.error.bind(console, 'Sass error')
+    }))
+    .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
+    .pipe(gulp.dest('.'));
+});
+
 gulp.task('stylesheets', function() {
   return gulp.src('stylesheets/bae.scss')
     .pipe($.sass({
@@ -92,7 +102,7 @@ gulp.task('ionfonts', function() {
     .pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('serve', ['stylesheets:dev', 'scripts:dev', 'ionfonts:dev'], function() {
+gulp.task('serve', ['stylesheets:dev', 'scripts:dev', 'ionfonts:dev', 'custom:dev'], function() {
   browserSync.init({
     notify: false,
     server: './',
@@ -100,7 +110,7 @@ gulp.task('serve', ['stylesheets:dev', 'scripts:dev', 'ionfonts:dev'], function(
   });
 
   gulp.watch(['./**/*.html'], reload);
-  gulp.watch(['stylesheets/**/*.scss'], ['stylesheets:dev', reload]);
+  gulp.watch(['stylesheets/**/*.scss'], ['stylesheets:dev', 'custom:dev', reload]);
   gulp.watch(['scripts/**/*.js'], ['scripts:dev', reload]);
 });
 
