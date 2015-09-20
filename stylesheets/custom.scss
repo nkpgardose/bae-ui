@@ -1,0 +1,61 @@
+@import 'color';
+@import 'media_queries';
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.drama {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  height: 95%;
+  width: 100%;
+  background-color: $warning;
+  color: $white;
+}
+
+.drama .drama-title {
+  font-weight: 700;
+}
+
+.heart {
+  font-size: 100px;
+  color: $secondary;
+}
+
+.primary {
+  color: $primary;
+}
+
+.secondary {
+  color: $secondary;
+}
+
+.success {
+  color: $success;
+}
+
+.grid--sample {
+  border-radius: 5px;
+  background-color: $black;
+  margin-bottom: 16px;
+}
+
+.cell--sample {  
+  border: $white solid 3px;
+  border-radius: 5px;
+  background-color: $warning;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* utility */
+.u-textStroke {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: $black;
+}
