@@ -42,14 +42,14 @@ gulp.task('stylesheets:dev', function() {
     }))
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
     .pipe($.concat('bae.css'))
-    .pipe(gulp.dest('dev'))
+    .pipe(gulp.dest('dev/stylesheets'))
     .pipe($.size({title: 'stylesheets'}));
 });
 
 gulp.task('scripts:dev', ['jscs', 'jshint'], function() {
   return gulp.src('scripts/**/*.js')
     .pipe($.concat('bae.js'))
-    .pipe(gulp.dest('dev'))
+    .pipe(gulp.dest('./dev/scripts'))
     .pipe($.size({title: 'scripts'}));
 });
 
@@ -87,6 +87,11 @@ gulp.task('scripts', ['jscs', 'jshint'], function() {
     .pipe($.size({title: 'scripts'}));
 });
 
+gulp.task('ionfonts', function() {
+  return gulp.src('stylesheets/fonts/*')
+    .pipe(gulp.dest('dist/fonts'));
+});
+
 gulp.task('serve', ['stylesheets:dev', 'scripts:dev', 'ionfonts:dev'], function() {
   browserSync.init({
     notify: false,
@@ -99,4 +104,4 @@ gulp.task('serve', ['stylesheets:dev', 'scripts:dev', 'ionfonts:dev'], function(
   gulp.watch(['scripts/**/*.js'], ['scripts:dev', reload]);
 });
 
-gulp.task('default', ['scripts', 'stylesheets']);
+gulp.task('default', ['scripts', 'stylesheets', 'ionfonts']);
