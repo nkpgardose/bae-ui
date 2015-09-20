@@ -1,7 +1,7 @@
 (function() {
   'use strict';
   var closeButton;
-  var flashClose = document.getElementsByClassName('js-flashClose');
+  var flashClose = document.getElementsByClassName('flash js-close');
 
   var closeFlash = function(event) {
     this.removeEventListener('click', closeFlash);
