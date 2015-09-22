@@ -16,7 +16,7 @@ $ git clone git@github.com:nkpgardose/bae-ui.git
 
 This require the following to run bae locally
 
-- latest node.js(https://nodejs.com) and [npm](https://npmjs.com)
+- latest [node.js](https://nodejs.com) and [npm](https://npmjs.com)
 - [gulp](http://gulpjs.com)
 
 To install gulp
