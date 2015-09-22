@@ -1,4 +1,4 @@
-# Bae UI
+# Bae UI :heart:
 
 > UI components using vanilla HTML, CSS, and JS. This suits from mobile to large screens, making static sites with ease
 
@@ -21,15 +21,22 @@ This require the following to run bae locally
 
 To install gulp
 ```
-npm install && npm install -g gulp
+$ npm install && npm install -g gulp
 ```
 
+To run bae on browsers
 ```
 $ cd bae-ui
 $ npm install --save-dev
 $ gulp serve # To run bae locally
-$ gulp # make dist
+$ gulp # Build a production version 
 ```
+## Want to Contribute?
+If you found a bug, have any question or want to contribute. Do pull request and let's improve bae :heart:
+
+## Coding Guidelines
+Conventions and practices for writing Bae UI's HTML, CSS, and Javascript to create or modfiy components with ease.
+**Guidelines currently under development**
 
 ## License
 
