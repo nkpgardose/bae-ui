@@ -1,7 +1,7 @@
 .flash {
   @include font-sansN3;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   margin-bottom: 10px;
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.87);
