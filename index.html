@@ -32,17 +32,22 @@
     <div class="grid grid--center">
       <div class="cell cell--8">
         <h3><i class="secondary u-textStroke icon ion-heart"></i>&nbsp;Bae</h3>
-        <h3><small>Being light, weird, and mobile-first in mind</small></h3>
+        <h3><small>A light UI component assets suitable for cross-device use</small></h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sit reprehenderit ipsa, praesentium, quas architecto perferendis earum ducimus voluptatum accusantium corrupti! Quo, impedit expedita quidem nihil velit a excepturi earum.
+          Components are easy to add and modify to make it your own.
+          Making it light by creating set of simple styled components using
+          HTML, CSS, and JavaScript.
+          You can use these components to build your web pages easily.
         </p>
-        <a class="btn btn--primary">Download</a>
+        <a class="btn btn--primary" href="">Download</a>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consectetur sunt, optio laboriosam hic voluptas reiciendis, vitae earum quasi, assumenda nam iusto sit. Numquam corporis at quae cum, quas ex!
+          Bae follows a guideline to help you add and modify components easily.
+          Following this guideline will also help you understand how bae's work.
         </p>
         <a class="btn btn--primary">View the Guidelines</a>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dicta modi quo, expedita itaque porro, odit nostrum labore qui incidunt ullam unde, doloribus minima nesciunt? Soluta aperiam provident sunt qui.
+          Here are some website that uses bae for their front-end.
+          <i class="secondary u-textStroke icon ion-heart"></i>
         </p>
         <a class="btn btn--primary">View a sample site</a>
       </div>
@@ -56,7 +61,22 @@
         <h2><small>List of bae's component</small></h2>
         <h4>Grid</h4>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tenetur dolorum mollitia minus aut deserunt doloremque provident, quae ullam, rem praesentium. Atque perspiciatis consequuntur, iusto ipsa provident saepe aliquam fugit.</p>
+        <p>
+          Built on flexbox, this support components when placing it on a page.
+          The grid is flexible and resize all your component to a reasonable
+          size making it look consistent and functional on all screen size.
+        </p>
+        <p>
+          By default, desktop screens has a maximum of
+          <strong>12 columns</strong>,
+          tablet for
+          <strong>8 columns</strong>,
+          and phones for
+          <strong>4 columns</strong>.
+          You can change the value of the maximum columns on each screen by
+          changing the column variable on
+          <a href="https://github.com/nkpgardose/bae-ui/blob/master/stylesheets/_media_queries.scss">bae</a>.
+        </p>
         <div class="grid grid--sample">
           <div class="cell cell--12 cell--sample">
             <span>.cell.cell--12</span>
@@ -65,10 +85,12 @@
             <span>.cell.cell--8</span>
           </div>
           <div class="cell cell--4 cell--sample">
-            <span>.cell.cell--4</span>
-          </div>
+            <span>.cell.cell--4</span> </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cupiditate temporibus quasi fugiat impedit ad dolorum dolore placeat mollitia repellendus iste! Cupiditate consequatur praesentium optio saepe aperiam, quia tempore incidunt!</p>
+        <p>
+          By just using cell, this will stack all other cells and place 
+          them in grid neatly and evenly. Automatically size all cells on a row.
+        </p>
         <div class="grid grid--sample">
           <div class="cell cell--sample">
             <span>cell</span>
@@ -89,7 +111,16 @@
             <span>cell</span>
           </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quia aliquid sequi incidunt nesciunt qui minima, saepe asperiores iusto ad at id dolores nemo accusamus? Deserunt provident perferendis animi similique?</p>
+        <p>
+          You can set your desired cell size on each screen,
+          making it flexible and suits your preference.
+        </p>
+        <strong>Note that:</strong>
+        <ul class="list list--inline">
+          <li><strong>p</strong> - phone</li>
+          <li><strong>t</strong> - tablet</li>
+          <li><strong>d</strong> - desktop</li>
+        </ul>
         <div class="grid grid--sample">
           <div class="cell cell--s4 cell--t8 cell--d12 cell--sample">
             <span>.cell.cell--p4.cell--t8.cell-d12</span>
@@ -101,7 +132,11 @@
             <span>.cell.cell--p4.cell--t6.cell--d6</span>
           </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sed eius, aliquam voluptatem ea, amet facilis cupiditate aliquid minima dolorem eos officia. Harum velit facilis repudiandae vero earum unde quibusdam.</p>
+        <p>
+          Hiding a certain cell on different screen size is easy,
+          by applying <code>is-&lt;screen size&gt;-hidden</code> class,
+          it will hide everything inside of that cell.
+        </p>
         <div class="grid grid--sample">
           <div class="cell cell--12 is-tablet-hidden cell--sample">
             <span>.cell.cell--12.is-tablet-hidden</span>
@@ -113,12 +148,37 @@
             <span>.cell.cell--12.is-desktop-hidden</span>
           </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim architecto at ipsam obcaecati dolores. Ipsum vitae fugiat deserunt esse nisi facere eligendi cum reiciendis nihil quae tenetur, enim nobis asperiores.</p>
+        <p>
+          <strong>NOTE:</strong> Hiding can apply on other component as well 
+          but it is preferred to use it on a cell
+        </p>
+        <p>
+          <strong>Cell placement</strong> are easy.
+          You can place a cells anywhere inside a grid
+        </p>
         <div class="grid grid--center grid--sample" style="height: 150px;">
           <div class="cell cell--6 cell--middle cell--sample">
             <span>grid.grid--center > cell.cell--6.cell--middle</span>
           </div>
         </div>
+        <p>
+          <code>.grid.grid--center > .cell.cell--6.cell--middle</code>
+          placing cell in the middle of a grid.
+        </p>
+        <div class="grid grid--right grid--sample" style="height: 150px;">
+          <div class="cell cell--6 cell--bottom cell--sample">
+            <span>grid.grid--right > cell.cell--6.cell--bottom</span>
+          </div>
+        </div>
+        <p>
+          <code>.grid.grid--right > .cell.cell--6.cell--bottom</code>
+          placing cell in the bottom right of a grid.
+        </p>
+        <p>
+          To check all grid modifiers and decendant of the bae,
+          check out its documentation.
+        </p>
+        <a href="#" class="btn btn--primary">Read More about Grid</a>
       </div>
     </div>
     <div class="grid grid--center">
